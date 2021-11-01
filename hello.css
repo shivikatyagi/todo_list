@@ -10,32 +10,23 @@
   }
   body{
     width: 100%;
-    height: 100vw;
-    /* overflow: hidden; */
+    height: 100%;
     padding: 1vw;
-    /* background: linear-gradient(to bottom, pink 0%, #497BE8 100%); */
     background-image: url(pp3.jpeg);
     background-size: cover;
     background-attachment: fixed;
-    background-size: 85vw 110vw;
+    background-size: 85vw 100vw;
     background-position: 45% 55%;
   }
-  /* .picture{
-    background-image: url(paper.png);
-  } */
   .wrapper{
     background: rgb(252, 249, 249);
     max-width: 32.5vw;
     width: 150%;
-    margin: 11% auto;
-    /* padding: 25px; */
     border-radius: 10px;
-    /* box-shadow: 0px 10px 15px rgba(0,0,0,0.1); */
-    /* margin-top: 8vw; */
-    /* align-items: center;
-    text-align: center; */
-    margin-top: 10%;
-    margin-bottom: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
   }
   .wrapper header{
       
@@ -44,15 +35,6 @@
     color: rgb(180, 102, 102);
     text-align: center;
     margin-top: 0vw;
-  }
-  .pic{
-      display: flex;
-  }
-  .pic img{
-      height: 11vw;
-      width: 18vw;
-      margin-left: 20vw;
-      /* margin-top: vw; */
   }
   .wrapper .inputField{
     margin: 1.3vw 0;
@@ -102,7 +84,7 @@
   .wrapper .todoList{
     max-height: 15vw;
     overflow-y: auto;
-    margin-left: 4vw;
+    margin-left: 3.3vw;
     max-width: 85%;
     margin-right: 3vw;
   }
@@ -129,9 +111,6 @@
     padding: 1vw 1vw;
     border-radius: 0 0.3vw 0.3vw 0;
     cursor: pointer;
-  }
-  .todoList li:hover .icon{
-    right: 0vw;
   }
   .wrapper .footer{
     display: flex;
@@ -161,162 +140,259 @@
     opacity: 1;
     pointer-events: auto;
   }
-@media(max-width:1000px){
+  @media(max-width: 800px)
+  {
     body{
-        width: 100%;
-        height: 100vw;
-        /* overflow: hidden; */
-        padding: 1vw;
-        /* background: linear-gradient(to bottom, pink 0%, #497BE8 100%); */
-        background-image: url(pp3.jpeg);
-        background-size: cover;
-        background-attachment: fixed;
-        background-size: 100vw 120vw;
-        background-position: 45% 55%;
-      }
-    .wrapper{
-        background: rgb(252, 249, 249);
-        max-width: 32.5vw;
-        width: 150%;
-        margin: 11vw auto;
-        /* padding: 25px; */
-        border-radius: 10px;
-        /* box-shadow: 0px 10px 15px rgba(0,0,0,0.1); */
-        /* margin-top: 8vw; */
-        align-items: center;
-        text-align: center;
-        margin-top: 19vw;
-        margin-bottom: auto;
-}
-}
-@media(max-width:850px){
-    body{
-        width: 100%;
-        height: 150vw;
-        /* overflow: hidden; */
-        padding: 1vw;
-        /* background: linear-gradient(to bottom, pink 0%, #497BE8 100%); */
-        background-image: url(pp3.jpeg);
-        background-size: cover;
-        background-attachment: fixed;
-        background-size: 100vw 140vw;
-        background-position: 45% 55%;
-      }
-    .wrapper{
-        background: rgb(252, 249, 249);
-        max-width: 32.5vw;
-        width: 150%;
-        margin: 11vw auto;
-        /* padding: 25px; */
-        border-radius: 10px;
-        /* box-shadow: 0px 10px 15px rgba(0,0,0,0.1); */
-        /* margin-top: 8vw; */
-        align-items: center;
-        text-align: center;
-        margin-top: 22vw;
-    }
-        .inputField input{
-            width: 85%;
-            height: 100%;
-            outline: none;
-            border-radius: 0.3vw;
-            border: 1px solid #ccc;
-            font-size: 1.6vw;
-            padding-left: 1.3vw;
-            transition: all 0.3s ease;
-            margin-left: 0.9vw;
-          }
-}
-@media(max-width:720px){
-    body{
-        width: 100%;
-        height: 100vw;
-        /* overflow: hidden; */
-        padding: 1vw;
-        /* background: linear-gradient(to bottom, pink 0%, #497BE8 100%); */
-        background-image: url(pp3.jpeg);
-        background-size: cover;
-        background-attachment: fixed;
-        background-size: 130vw 180vw;
-        background-position: 45% 55%;
-      }
-    .wrapper{
-        background: rgb(252, 249, 249);
-        max-width: 32.5vw;
-        width: 150%;
-        margin: 11vw auto;
-        /* padding: 25px; */
-        border-radius: 10px;
-        /* box-shadow: 0px 10px 15px rgba(0,0,0,0.1); */
-        margin-top: 8vw;
-       
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        margin-top: 30vw;
-    }
-        .wrapper header{
-      
-            font-size: 5vw;
-            font-weight: 600;
-            color: rgb(180, 102, 102);
-            text-align: center;
-          }
-    
-}
-@media(max-width:560px){
-    body{
-        width: 100%;
-        height: 100vw;
-        /* overflow: hidden; */
-        padding: 1vw;
-        /* background: linear-gradient(to bottom, pink 0%, #497BE8 100%); */
-        background-image: url(pp3.jpeg);
-        background-size: cover;
-        background-attachment: fixed;
-        background-size: 100vw 205vw;
-        background-position: 45% 55%;
-      }
-    .wrapper{
-        background: rgb(252, 249, 249);
-        max-width: 32.5vw;
-        width: 150%;
-        margin: 11vw auto;
-        /* padding: 25px; */
-        border-radius: 10px;
-        /* box-shadow: 0px 10px 15px rgba(0,0,0,0.1); */
-        /* margin-top: 8vw; */
-        align-items: center;
-        text-align: center;
-        margin-top: 40vw;
-}
-}
-@media(max-width:460px){
-  body{
       width: 100%;
-      height: 100vw;
-      /* overflow: hidden; */
+      height: 100%;
       padding: 1vw;
-      /* background: linear-gradient(to bottom, pink 0%, #497BE8 100%); */
       background-image: url(pp3.jpeg);
       background-size: cover;
       background-attachment: fixed;
-      background-size: 100vw 270vw;
+      background-size: 120vw 180vw;
       background-position: 45% 55%;
+      
     }
-  .wrapper{
+    .wrapper{
       background: rgb(252, 249, 249);
-      max-width: 32.5vw;
+      max-width: 45.5vw;
       width: 150%;
-      margin: 11vw auto;
-      /* padding: 25px; */
       border-radius: 10px;
-      /* box-shadow: 0px 10px 15px rgba(0,0,0,0.1); */
-      /* margin-top: 8vw; */
-      align-items: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50% , -50%);
+    }
+    .wrapper header{
+        
+      font-size: 6vw;
+      font-weight: 600;
+      color: rgb(180, 102, 102);
       text-align: center;
-      margin-top: 50vw;
-      margin-bottom: auto;
-     
-}
-}
+      margin-top: 0vw;
+      margin-bottom: 4vw;
+    }
+    .wrapper .inputField{
+      margin: 1.3vw 0;
+      width: 95%;
+      display: flex;
+      height: 4.5vw;
+      margin-bottom: 2vw;
+      margin-right: 2.7vw;
+    }
+    .inputField input{
+      width: 85%;
+      height: 100%;
+      outline: none;
+      border-radius: 0.3vw;
+      border: 1px solid #ccc;
+      font-size: 2.4vw;
+      padding-left: 1.3vw;
+      transition: all 0.3s ease;
+      margin-left: 0.9vw;
+    }
+      .inputField button{
+        width: 5vw;
+        height: 85%;
+        border: none;
+        color: #fff;
+        margin-top: 0.5vw;
+        margin-left: 0.5vw;
+        font-size: 2vw;
+        outline: none;
+        background: #aa377a;
+        cursor: pointer;
+        border-radius: 0.3vw;
+        opacity: 0.6;
+        pointer-events: none;
+        transition: all 0.3s ease;
+      
+    }
+    .wrapper .todoList{
+      max-height: 25vw;
+      overflow-y: auto;
+      margin-left: 3.3vw;
+      max-width: 85%;
+      margin-right: 3vw;
+    }
+    .todoList li{
+      position: relative;
+      list-style: none;
+      margin-bottom: 0.5vw;
+      background: #f2f2f2;
+      border-radius: 0.3vw;
+      padding: 0.6vw 1.2vw;
+      cursor: default;
+      overflow: hidden;
+      word-wrap: break-word;
+      
+    }
+    .todoList li .icon{
+      position: absolute;
+      right: 0vw;
+      top: 0%;
+      background: #dd60a9;
+      width: 4vw;
+      text-align: center;
+      color: #fff;
+      padding: 1vw 1vw;
+      border-radius: 0 0.3vw 0.3vw 0;
+      cursor: pointer;
+    }
+    .wrapper .footer{
+      display: flex;
+      width: 100%;
+      margin-top: 5vw;
+      align-items: center;
+      justify-content: space-between;
+  
+    }
+    .footer button{
+      padding: 0.3vw 2vw;
+      border-radius: 0.3vw;
+      border: none;
+      outline: none;
+      color: #fff;
+      font-weight: 400;
+      font-size: 2.1vw;
+      margin-left: 0.55vw;
+      background: #aa377a;
+      cursor: pointer;
+      user-select: none;
+      opacity: 0.6;
+      pointer-events: none;
+      transition: all 0.3s ease;
+    }
+    .footer button.active{
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+  @media(max-width: 500px)
+  {
+    body{
+      width: 100%;
+      height: 100%;
+      padding: 1vw;
+      background-image: url(pp3.jpeg);
+      background-size: cover;
+      background-attachment: fixed;
+      background-size: 120vw 230vw;
+      background-position: 45% 55%;
+      
+    }
+    .wrapper{
+      background: rgb(252, 249, 249);
+      max-width: 45.5vw;
+      width: 150%;
+      border-radius: 10px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50% , -50%);
+    }
+    .wrapper header{
+        
+      font-size: 8vw;
+      font-weight: 600;
+      color: rgb(180, 102, 102);
+      text-align: center;
+      margin-top: 0vw;
+      margin-bottom: 4vw;
+    }
+    .wrapper .inputField{
+      margin: 1.3vw 0;
+      width: 95%;
+      display: flex;
+      height: 6.5vw;
+      
+      margin-right: 2.7vw;
+    }
+    .inputField input{
+      width: 85%;
+      height: 100%;
+      outline: none;
+      border-radius: 0.3vw;
+      border: 1px solid #ccc;
+      font-size: 3.4vw;
+      padding-left: 1.3vw;
+      transition: all 0.3s ease;
+      margin-left: 0.9vw;
+    }
+      .inputField button{
+        width: 5vw;
+        height: 85%;
+        border: none;
+        color: #fff;
+        margin-top: 0.5vw;
+        margin-left: 0.5vw;
+        font-size: 2vw;
+        outline: none;
+        background: #aa377a;
+        cursor: pointer;
+        border-radius: 0.3vw;
+        opacity: 0.6;
+        pointer-events: none;
+        transition: all 0.3s ease;
+      
+    }
+    .wrapper .todoList{
+      max-height: 25vw;
+      overflow-y: auto;
+      margin-left: 3.3vw;
+      max-width: 85%;
+      margin-right: 3vw;
+    }
+    .todoList li{
+      position: relative;
+      list-style: none;
+      margin-bottom: 0.5vw;
+      background: #f2f2f2;
+      border-radius: 0.3vw;
+      padding: 0.6vw 1.2vw;
+      cursor: default;
+      overflow: hidden;
+      word-wrap: break-word;
+      
+    }
+    .todoList li .icon{
+      position: absolute;
+      right: 0vw;
+      top: 0%;
+      background: #dd60a9;
+      width: 4vw;
+      text-align: center;
+      color: #fff;
+      padding: 1vw 1vw;
+      border-radius: 0 0.3vw 0.3vw 0;
+      cursor: pointer;
+    }
+    .wrapper .footer{
+      display: flex;
+      width: 100%;
+      margin-top: 5vw;
+      align-items: center;
+      justify-content: space-between;
+  
+    }
+    .footer button{
+      padding: 0.3vw 2vw;
+      border-radius: 0.3vw;
+      border: none;
+      outline: none;
+      color: #fff;
+      font-weight: 400;
+      font-size: 2.1vw;
+      margin-left: 0.55vw;
+      background: #aa377a;
+      cursor: pointer;
+      user-select: none;
+      opacity: 0.6;
+      pointer-events: none;
+      transition: all 0.3s ease;
+    }
+    .footer button.active{
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
