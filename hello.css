@@ -120,17 +120,15 @@
   }
   .todoList li .icon{
     position: absolute;
-    right: -5vw;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #e74c3c;
-    width: 4.5vw;
+    right: 0vw;
+    top: 0%;
+    background: #dd60a9;
+    width: 3vw;
     text-align: center;
     color: #fff;
-    padding: 1vw 1.5vw;
+    padding: 1vw 1vw;
     border-radius: 0 0.3vw 0.3vw 0;
     cursor: pointer;
-    transition: all 0.2s ease;
   }
   .todoList li:hover .icon{
     right: 0vw;
